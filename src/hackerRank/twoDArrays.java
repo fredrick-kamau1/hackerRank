@@ -13,6 +13,8 @@ public class twoDArrays {
             }
             System.out.println();
             System.out.println();
+            System.out.println();
+
         }
     }
 }
