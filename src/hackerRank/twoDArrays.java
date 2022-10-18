@@ -12,7 +12,8 @@ public class twoDArrays {
                 System.out.print(nums[row][col]);
             }
             System.out.println();
-            System.out.println();                
+            System.out.println();
+            System.out.println();
         }
     }
 }
