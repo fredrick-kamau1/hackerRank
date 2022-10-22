@@ -21,4 +21,11 @@ public class twoDArrays {
             System.out.println();
            
     }
+        
+        for(int row = 0; row < nums.length; row++){
+            for (int col = 0; col < nums[row].length ; col++){
+                System.out.print(nums[row][col]);
+            }
+            System.out.println();
+           
 }
