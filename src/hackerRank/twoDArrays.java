@@ -16,9 +16,15 @@ public class twoDArrays {
             for (int col = 0; col < nums[row].length ; col++){
                 System.out.print(nums[row][col]);
             }
+        
+                
+            }
             System.out.println();
         }
-    }
+    
+
+           
+    
     public static int arrSum(int[][] arr){
         int rows = arr.length;
         int columns = arr[0].length;
