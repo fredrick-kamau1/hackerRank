@@ -5,10 +5,12 @@ import java.util.Arrays;
 public class twoDArrays {
     public static void main(String[] args) {
         int[][] nums = {{1,2,3},{4,5,6},{7,8,9}};
+        int[][] seats = new int[8][9];
         //System.out.println(Arrays.deepToString(nums));
-        arrPrint(nums);
-        System.out.println(arrSum(nums));
-
+        //arrPrint(nums);
+        //System.out.println(arrSum(nums));
+        //seats(seats);
+        int num = Integer.MAX_VALUE;
     }
 
     public static void arrPrint(int[][] nums){
@@ -16,7 +18,6 @@ public class twoDArrays {
             for (int col = 0; col < nums[row].length ; col++){
                 System.out.print(nums[row][col]);
             }
-        
                 
             }
             System.out.println();
@@ -45,4 +46,28 @@ public class twoDArrays {
 
         return max_hourglass_sum;
     }
-}
+
+    public static void seats(int[][] arr){
+        int rows = arr.length;
+        int columns = arr[0].length;
+
+        //initialize array
+        for(int i = 1; i < rows; i++){
+            arr[i][0] = i;
+            for (int j = 1; j < columns ; j++) {
+                arr[0][j] = j;
+            }
+            System.out.println();
+        }
+
+        //Print array
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j < columns; j++){
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
+    }
